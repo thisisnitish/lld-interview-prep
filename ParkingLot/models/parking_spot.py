@@ -19,7 +19,7 @@ class ParkingSpot:
     
     def park_vehicle(self, vehicle):
         with self.lock:
-            self.park_vehicle = vehicle
+            self.parked_vehicle = vehicle
             self.is_occupied = True
 
     def unpark_vehicle(self):
